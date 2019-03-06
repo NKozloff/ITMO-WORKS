@@ -1,0 +1,3 @@
+C:/Users/nikita/CLionProjects/Task2/cmake-build-debug/CMakeFiles/Task2.dir
+C:/Users/nikita/CLionProjects/Task2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nikita/CLionProjects/Task2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
