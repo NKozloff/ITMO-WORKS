@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int ShowNumberRepresentation( int number, int base){
 
     switch(base)
@@ -14,9 +15,6 @@ int ShowNumberRepresentation( int number, int base){
             break;
     }
 }
-
-
-
 
 int main() {
     // Task1
@@ -43,9 +41,6 @@ int main() {
     printf("Enter a second number (octal): ");
     scanf("%o", &secondnumber);
     ShowNumberRepresentation(firstnumber || secondnumber, 8);
-
-
-
 
     return 0;
 }
