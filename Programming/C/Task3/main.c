@@ -1,7 +1,7 @@
 #include <stdio.h>
+// Variant 5
 
 int ShowNumberRepresentation( int number, int base){
-
     switch(base)
     {
         case 8: // восьмеричное число

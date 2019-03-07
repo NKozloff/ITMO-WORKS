@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// Variant 5
 void InputIntNumber() {
     int intNumber;
     printf("Enter an Integer number: ");

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+// Variant 5
 double DegreeToRadian(double degree){
     return degree* M_PI / 180;
 }
