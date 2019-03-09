@@ -16,18 +16,18 @@ int main() {
 
     // Second Task
     char *f; // Указатель на массив
-    int i, size; // n - размер массива
+    int i, size; // size - размер массива
 
     printf("Entered a size of array: ");
     scanf(" %d", &size);
 
     f = (char *) malloc(size * sizeof(char));
-
+    //Заполняем массива
     for (i = 0; i < size; i++) {
         printf("f[%d]= ", i);
         scanf(" %c", &f[i]);
     }
-
+    // Вывод в вид массива
     for (i = 0; i < size; i++) {
         printf("f[%d]=%c \n", i, f[i]);
     }
