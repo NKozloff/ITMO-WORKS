@@ -7,8 +7,8 @@ float LengthOfLine(float x1, float x2, float y1, float y2) {
 }
 
 // Функция, которая отображает состояние прибора
-char *FormatState(int state){
-    return state==1 ? "On" : "Off";
+char *FormatState(int state) {
+    return state == 1 ? "On" : "Off";
 }
 
 enum MusicianStyle {
@@ -37,8 +37,8 @@ union ADSL {
         unsigned short DSL :1;
         unsigned short PPP :1;
         unsigned short Link :1;
-    }bitState;
-}ADSL;
+    } bitState;
+} ADSL;
 
 int main() {
     //First Task
@@ -52,10 +52,12 @@ int main() {
            LengthOfLine(lineSegment.point1_x, lineSegment.point2_x, lineSegment.point1_y, lineSegment.point2_y));
 
     // Third Task
-    printf("Enter a ADSL state (hexadecimal): ");
-
-    printf("%hi", FormatState(ADSL.state));
-    printf("DSL is %s \n",FormatState(ADSL.bitState.DSL));
+    printf("Enter an ADSL state (hexadecimal): ");
+    scanf("%x", &ADSL.state);
+    // Состояние ADSL модема
+    printf("ADSL state is %s \n", FormatState(ADSL.state));
+    // Состояние элементов прибора
+    printf("DSL is %s \n", FormatState(ADSL.bitState.DSL));
     printf("PPP is %s \n", FormatState(ADSL.bitState.PPP));
     printf("Link is %s \n", FormatState(ADSL.bitState.Link));
 
