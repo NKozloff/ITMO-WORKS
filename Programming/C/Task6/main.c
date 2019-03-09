@@ -22,7 +22,7 @@ int main() {
     scanf(" %d", &size);
 
     f = (char *) malloc(size * sizeof(char));
-    //Заполняем массива
+    //Заполнение массива
     for (i = 0; i < size; i++) {
         printf("f[%d]= ", i);
         scanf(" %c", &f[i]);
