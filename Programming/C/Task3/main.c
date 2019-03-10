@@ -1,14 +1,14 @@
 #include <stdio.h>
 // Variant 5
 
-int ShowNumberRepresentation( int number, int base){
+void ShowNumberRepresentation(const int number, int base){
     switch(base)
     {
         case 8: // восьмеричное число
-            printf("Octal number: %i \n", number);
+            printf("Octal number: %o \n", number & 0xF);
             break;
         case 16: // 16
-            printf("Hexademical number: %x \n", number);
+            printf("Hexadecimal number: %x \n", number);
             break;
         default:  // 10
             printf("Decimal number: %d \n", number);
@@ -31,7 +31,8 @@ int main() {
     printf("Third Task\n");
     // Task3
     ShowNumberRepresentation(firstnumber, 8);
-    ShowNumberRepresentation(firstnumber >>1,8);
+
+    ShowNumberRepresentation(firstnumber >> 1, 8);
     printf("Fourth Task\n");
     // Task4
     ShowNumberRepresentation(firstnumber, 8);
@@ -40,7 +41,7 @@ int main() {
     //Task5
     printf("Enter a second number (octal): ");
     scanf("%o", &secondnumber);
-    ShowNumberRepresentation(firstnumber || secondnumber, 8);
+    ShowNumberRepresentation(firstnumber ^ secondnumber, 8);
 
     return 0;
 }
