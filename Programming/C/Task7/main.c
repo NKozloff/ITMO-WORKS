@@ -54,8 +54,7 @@ int main() {
     // Third Task
     printf("Enter an ADSL state (hexadecimal): ");
     scanf("%x", &ADSL.state);
-    // Состояние ADSL модема
-    printf("ADSL state is %s \n", FormatState(ADSL.state));
+
     // Состояние элементов прибора
     printf("DSL is %s \n", FormatState(ADSL.bitState.DSL));
     printf("PPP is %s \n", FormatState(ADSL.bitState.PPP));
