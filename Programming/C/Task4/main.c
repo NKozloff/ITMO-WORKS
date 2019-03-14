@@ -2,20 +2,20 @@
 
 const int LowRange = -3;
 const int HighRange = 6;
-const int Bit_Position = 5;
-int CheckRange(int number, int LowestRange, int HighestRange){
-    return ( number >= LowestRange) && (number <= HighestRange);
+const int Bit_Position = 1;
+
+int CheckRange(int number, int LowestRange, int HighestRange) {
+    return (number >= LowestRange) && (number <= HighestRange);
 }
 
-int BitValue( int number, int position){
-    return( number >> position) & 1 ;
+int BitValue(int number, int position) {
+    return (number >> position) & 1u;
 
 }
 
 int main() {
 
     // 1 Task
-
     int numberInput;
     printf("Enter a number: \n");
     scanf("%i", &numberInput);
@@ -28,8 +28,6 @@ int main() {
     printf("Enter a number: \n");
     scanf("%i", &numberInput);
     printf("Value of a bit at %i position is %i", Bit_Position, BitValue(numberInput, Bit_Position));
-
-
 
     return 0;
 }
