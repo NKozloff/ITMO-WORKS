@@ -67,7 +67,6 @@ int main() {
     scanf("%s", string2);
     // Переменная, в которую будут заноситься начальные адреса частей строки string1
     char *c;
-
     printf("Split result:\n");
     // Выделение первой части строки
     c = strtok(string1, string2);
