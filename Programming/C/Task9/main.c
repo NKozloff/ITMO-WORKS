@@ -2,9 +2,8 @@
 #include <stdbool.h>
 
 int main() {
-
+    //Task1
     printf("Task 1\n");
-
 
     int Numbers = 0, Capital = 0, Cursive = 0;
     char str[300] = {"\0"};
