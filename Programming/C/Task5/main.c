@@ -34,7 +34,6 @@ void matrixProduct(int matrixLeft[MAX_ROWS][MAX_COLUMNS],
     }
 }
 
-// Variant 9
 int main() {
     // Task 1
     int array[9] = {99, 88, 77, 66, 55, 44, 33, 22, 11};
