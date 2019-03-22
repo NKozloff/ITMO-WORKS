@@ -18,4 +18,5 @@ void printVector(struct Vector coordinate);
 void readVector(struct Vector *coordinate);
 float getVectorLength(struct Vector vector);
 
+
 #endif //TEMPORARY_VECTOR_H

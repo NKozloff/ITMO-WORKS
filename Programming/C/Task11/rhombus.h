@@ -9,6 +9,7 @@
 
 struct Rhombus{
     struct Vector points[4];
+    float height;
 };
 
 void readCoordinates(struct Rhombus *rhombus);

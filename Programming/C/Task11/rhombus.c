@@ -29,6 +29,20 @@ float getRhombusPerimeter(struct Rhombus rhombus){
 }
 float getRhombusArea(struct Rhombus rhombus){
     float area = 0;
+    for(int i=0; i<4; ++i){
+        int startPointIndex = i;
+        int endPointIndex = i == 3 ? 0 : i + 1;
+
+        struct Vector line;
+        createVector(
+                &line,
+                rhombus.points[startPointIndex],
+                rhombus.points[endPointIndex]
+        );
+       area += getVectorLength(line) * rhombus.height;
+    }
+    return area;
+
 
 }
 
