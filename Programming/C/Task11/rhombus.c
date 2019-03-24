@@ -15,6 +15,7 @@ float getRhombusPerimeter(struct Rhombus rhombus){
 
     for(int i=0; i<4; ++i){
         int startPointIndex = i;
+        //если начальная точка последняя, ​​то подключаем ее к первой точке
         int endPointIndex = i == 3 ? 0 : i + 1;
 
         struct Vector line;
@@ -42,8 +43,6 @@ float getRhombusArea(struct Rhombus rhombus){
        area += getVectorLength(line) * rhombus.height;
     }
     return area;
-
-
 }
 
 void createEmptyRhombus(struct Rhombus *rhombus){

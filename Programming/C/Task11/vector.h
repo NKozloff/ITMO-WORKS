@@ -2,8 +2,8 @@
 // Created by nikita on 18.03.2019.
 //
 
-#ifndef TEMPORARY_VECTOR_H
-#define TEMPORARY_VECTOR_H
+#ifndef TASK11_VECTOR_H
+#define TASK11_VECTOR_H
 #include <stdio.h>
 #include <math.h>
 
@@ -19,4 +19,4 @@ void readVector(struct Vector *coordinate);
 float getVectorLength(struct Vector vector);
 
 
-#endif //TEMPORARY_VECTOR_H
+#endif //TASK11_VECTOR_H
